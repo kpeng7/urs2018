@@ -11,9 +11,15 @@
 @-webkit-keyframes show
 {
     0% {
+        display: none;
+        opacity: 0;
+    }
+    75% {
+        display: block;
         opacity: 0;
     }
     100% {
+        display: block;
         opacity: 1;
     }
 }
@@ -27,8 +33,7 @@ h1 {
 
 .appearOnEntry{
   -webkit-animation-name: show;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 4s;
 }
 
 .ursHeader{
@@ -40,7 +45,6 @@ h1 {
 }
 
 #apply{
-  opacity: 0;
   float: right;
   width: 20%;
   position: absolute;
