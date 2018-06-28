@@ -25,6 +25,7 @@ h1 {
 }
 
 .appearOnEntry{
+  opacity: 0;
   -webkit-animation-name: show;
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 3s;
@@ -43,5 +44,4 @@ h1 {
   float: right;
   width: 20%;
   position: absolute;
-  opacity: 0%;
 }
