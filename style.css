@@ -76,7 +76,7 @@ h1 {
 
 #info {
     margin-left: 20%;
-    margin-right: 10%
+    margin-right: 10%;
     text-align: left;
     width: 40%;
     position: absolute;
@@ -88,6 +88,4 @@ h1 {
   width: 10%;
   position: absolute;
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
 }
