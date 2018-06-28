@@ -36,12 +36,13 @@ h1 {
   -webkit-animation-duration: 4s;
 }
 
-.ursHeader{
+#ursHeader{
   height: auto;
   width: auto;
   top: 20%;
   position: absolute;
-  -webkit-animation-name: move 3s;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 3s;
 }
 
 #apply{
