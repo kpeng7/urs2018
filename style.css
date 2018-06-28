@@ -33,6 +33,7 @@ h1 {
 }
 
 #ursHeader{
+  opacity: 1;
   height: auto;
   width: auto;
   top: 20%;
