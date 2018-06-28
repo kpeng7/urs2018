@@ -32,12 +32,12 @@ h1 {
 }
 
 #ursHeader{
-    height: auto;
-    width: auto;
-    top: 20%;
-    position: absolute;
-    -webkit-animation-name: move;
-    -webkit-animation-duration: 3s;
+  height: auto;
+  width: auto;
+  top: 20%;
+  position: absolute;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 3s;
 }
 
 #apply{
