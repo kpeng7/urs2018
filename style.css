@@ -31,14 +31,12 @@ h1 {
   -webkit-animation-delay: 3s;
 }
 
-#ursHeader{
-  opacity: 0;
+.ursHeader{
   height: auto;
   width: auto;
   top: 20%;
   position: absolute;
-  -webkit-animation-name: move;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-name: move 3s;
 }
 
 #apply{
