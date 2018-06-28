@@ -61,6 +61,9 @@ h1 {
   opacity: 1;
   -webkit-animation-name: show;
   -webkit-animation-duration: 4s;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: calc(16px + 0.5vw);
 }
 
 #ursHeader{
@@ -72,8 +75,16 @@ h1 {
   -webkit-animation-duration: 3s;
 }
 
+#info {
+    margin-left: 10%;
+    width: 50%;
+    position: absolute;
+    line-height: 0.5em;
+}
+
 #apply{
-  float: right;
-  width: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 30%;
   position: absolute;
 }
