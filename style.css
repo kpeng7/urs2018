@@ -62,7 +62,6 @@ h1 {
   -webkit-animation-name: show;
   -webkit-animation-duration: 4s;
   font-family: 'Lato', sans-serif;
-  text-align: center;
   font-size: calc(16px + 0.5vw);
 }
 
@@ -88,4 +87,5 @@ h1 {
   margin-right: 10%;
   width: 30%;
   position: absolute;
+  text-align: center;
 }
