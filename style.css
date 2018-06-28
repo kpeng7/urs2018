@@ -8,7 +8,32 @@
     }
 }
 
+@keyframes move
+{
+    from {
+        top: 0;
+    }
+    to {
+        top: 20%;
+    }
+}
+
 @-webkit-keyframes show
+{
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    75% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+@keyframes show
 {
     0% {
         display: none;
@@ -31,6 +56,7 @@ h1 {
 }
 
 .appearOnEntry{
+  opacity: 1;
   -webkit-animation-name: show;
   -webkit-animation-duration: 4s;
 }
