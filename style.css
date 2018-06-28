@@ -26,14 +26,13 @@ h1 {
 }
 
 .appearOnEntry{
-  opacity: 0;
   -webkit-animation-name: show;
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 3s;
 }
 
 #ursHeader{
-  opacity: 1;
+  opacity: 0;
   height: auto;
   width: auto;
   top: 20%;
