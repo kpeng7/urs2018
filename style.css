@@ -33,6 +33,7 @@
         opacity: 1;
     }
 }
+
 @keyframes show
 {
     0% {
@@ -55,11 +56,11 @@ h1 {
   font-size: 4.0em;
 }
 
-.appearOnEntry{
+/* .appearOnEntry{
   opacity: 1;
   -webkit-animation-name: show;
   -webkit-animation-duration: 4s;
-}
+} */
 
 #ursHeader{
   height: auto;
@@ -70,8 +71,8 @@ h1 {
   -webkit-animation-duration: 3s;
 }
 
-#apply{
+/* #apply{
   float: right;
   width: 20%;
   position: absolute;
-}
+} */
