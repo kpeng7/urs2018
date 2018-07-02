@@ -79,26 +79,29 @@ h1 {
 
 #date, #location, #time {
     display: inline-block;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 15%;
+    margin-right: 5%;
     text-align: left;
     width: 50%;
     line-height: 0.5em;
     position: relative;
-    font-size: calc(16px + 0.3vw);
+    font-size: calc(16px + 2vw);
 }
 
 #buttonContainer {
   display: inline-block;
-  outline: 5px dashed purple;
   position: relative;
-  width: 20%;
+  width: 15%;
   height: 0.5em;
   vertical-align: top;
 }
 
 #apply{
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
+    font-size: calc(16px + 2vw);
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
 }
