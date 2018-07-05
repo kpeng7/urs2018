@@ -58,6 +58,8 @@ h1 {
 }
 
 .appearOnEntry{
+  display: grid;
+  grid-template-columns: 15% 30% 25% 20% 15%;
   text-align: left;
   opacity: 1;
   -webkit-animation-name: show;
@@ -78,30 +80,26 @@ h1 {
 }
 
 #date, #location, #time {
-    display: inline-block;
+    grid-column-start: 2;
+    grid-column-end: 4;
     margin-top: 7px;
     margin-bottom: 7px;
-    margin-left: 15%;
-    margin-right: 5%;
     text-align: left;
     width: 45%;
     line-height: 0.5em;
     position: relative;
-    font-size: calc(10px + 0.3vw);
+    font-size: calc(6px + 1vw);
 }
 
 #buttonContainer {
-  display: inline-block;
-  position: relative;
-  width: 15%;
+  grid-column-start: 4;
+  grid-column-end: 5;
   height: 0.5em;
-  vertical-align: top;
+  align-self: end;
 }
 
 #apply{
     font-family: 'Lato', sans-serif;
-    font-size: calc(10px + 0.3vw);
+    font-size: calc(6px + 1vw);
     text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
 }
