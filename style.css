@@ -105,6 +105,7 @@ h1 {
     font-size: calc(6px + 1.5vw);
     text-align: center;
     align-self: center;
+    justify-content: center;
 }
 /* #border2 {
   grid-column-start: 4;
