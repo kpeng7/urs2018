@@ -4,7 +4,7 @@
         top: 0;
     }
     to {
-        top: 15%;
+        top: 10%;
     }
 }
 
@@ -14,7 +14,7 @@
         top: 0;
     }
     to {
-        top: 15%;
+        top: 10%;
     }
 }
 
@@ -60,7 +60,7 @@ h1 {
 .appearOnEntry{
   display: grid;
   grid-template-columns: 15% 30% 25% 20% 15%;
-  text-align: left;
+  grid-template-rows: 0.5em 0.5em 0.5em;
   opacity: 1;
   -webkit-animation-name: show;
   -webkit-animation-duration: 4s;
@@ -73,27 +73,27 @@ h1 {
   left: 0;
   right: 0;
   margin: 0;
-  top: 15%;
+  top: 10%;
   position: absolute;
   -webkit-animation-name: move;
   -webkit-animation-duration: 3s;
 }
 
-#date, #location, #time {
+#info {
     grid-column-start: 2;
     grid-column-end: 4;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    grid-row-start: 1;
+    grid-row-end: 4;
     text-align: left;
-    width: 45%;
     line-height: 0.5em;
-    position: relative;
     font-size: calc(6px + 1vw);
 }
 
 #buttonContainer {
   grid-column-start: 4;
   grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
   height: 0.5em;
   align-self: end;
 }
