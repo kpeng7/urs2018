@@ -67,6 +67,7 @@ h1 {
 }
 
 .appearOnEntry{
+  margin-top: 5%;
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
@@ -84,7 +85,7 @@ h1 {
   overflow: hidden;
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Links inside the navbar */
@@ -103,11 +104,15 @@ h1 {
     color: black;
 }
 
-#home {
-  background-color: lightblue;
+.page {
   top: 0;
   margin: 0;
   height: 100%;
+  min-height: 700px;
+}
+
+#home {
+  background-color: lightblue;
   position: relative;
 }
 
@@ -149,7 +154,6 @@ h1 {
 }
 
 #about {
-  height: 1000px;
   background-color: purple;
 }
 
