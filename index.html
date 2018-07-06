@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.smooth').on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
   <title>JHU URS 2018</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+</head>
+
+<body>
   <div id="navigation">
     <ul>
-      <a href="#home">Home</a>
+      <a href="#">Home</a>
       <a href="#about">About</a>
       <a href="#info">Info</a>
     </ul>
   </div>
-</head>
-
-<body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-  <script>
-  $('.smooth').on('click', function() {
-      $.smoothScroll({
-          scrollElement: $('body'),
-          scrollTarget: '#' + this.id
-      });
-
-      return false;
-  });
-  </script>
   <div id="home">
     <a id="home" class="smooth"></a>
     <div id="ursHeader" align="center">
