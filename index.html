@@ -6,18 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
-</head>
-<body>
-<div id="ursHeader" align="center">
-  <h1>JHU Undergraduate Research Symposium 2018</h1>
-  <div class="appearOnEntry">
-    <div id="info">
-      <p> Date: TBA </p>
-      <p> Time: TBA </p>
-      <p> Location: TBA </p>
-    </div>
-    <button id="apply" type="button">Apply now!</button>
+  <div id="navigation">
+    <ul>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#info">Info</a>
+    </ul>
   </div>
-</div>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+  <script>
+  $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
+
+      return false;
+  });
+  </script>
+  <div id="home">
+    <a id="home" class="smooth"></a>
+    <div id="ursHeader" align="center">
+      <h1>JHU Undergraduate Research Symposium 2018</h1>
+      <div class="appearOnEntry">
+        <div id="info">
+          <p> Date: TBA </p>
+          <p> Time: TBA </p>
+          <p> Location: TBA </p>
+        </div>
+        <button id="apply" type="button">Apply now!</button>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <a id="about" class="smooth"></a>
+    <title>About</title>
+  </div>
 </body>
 </html>
