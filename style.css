@@ -4,7 +4,7 @@
         top: 0;
     }
     to {
-        top: 10%;
+        top: 15%;
     }
 }
 
@@ -14,7 +14,7 @@
         top: 0;
     }
     to {
-        top: 10%;
+        top: 15%;
     }
 }
 
@@ -50,13 +50,20 @@
     }
 }
 
+html, body, ul {
+  padding: 0;
+  margin: 0;
+  min-width: 1024px;
+  position: relative;
+}
+
 h1 {
   grid-row-start: 1;
   grid-row-end: 2;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   text-align: center;
-  font-size: calc(16px + 5.0vw);
+  font-size: calc(60px + 1vw);
 }
 
 .appearOnEntry{
@@ -72,10 +79,12 @@ h1 {
 }
 
 #navigation {
+  margin: 0;
   position: fixed;
   overflow: hidden;
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 1;
 }
 
 /* Links inside the navbar */
@@ -97,8 +106,9 @@ h1 {
 #home {
   background-color: lightblue;
   top: 0;
-  margin-top: 0px;
-  height: 1000px;
+  margin: 0;
+  height: 100%;
+  position: relative;
 }
 
 #ursHeader{
@@ -107,7 +117,7 @@ h1 {
   left: 0;
   right: 0;
   margin: 0;
-  top: 10%;
+  top: 15%;
   position: absolute;
   display: grid;
   -webkit-animation-name: move;
@@ -121,7 +131,7 @@ h1 {
     grid-row-end: 4;
     text-align: left;
     line-height: 0.5em;
-    font-size: calc(6px + 1.5vw);
+    font-size: calc(20px + 0.5vw);
     align-self: center;
     justify-self: stretch;
 }
@@ -132,7 +142,7 @@ h1 {
     grid-row-start: 2;
     grid-row-end: 3;
     font-family: 'Lato', sans-serif;
-    font-size: calc(6px + 1.5vw);
+    font-size: calc(20px + 0.5vw);
     text-align: center;
     align-self: center;
     justify-content: center;

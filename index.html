@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
   $(document).ready(function(){
-    $('.smooth').on('click', function(event) {
+    $(".smooth").on('click', function(event) {
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
         // Prevent default anchor click behavior
@@ -35,13 +35,12 @@
 <body>
   <div id="navigation">
     <ul>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#info">Info</a>
+      <a href="#home" class="smooth">Home</a>
+      <a href="#about" class="smooth">About</a>
+      <a href="#info" class="smooth">Info</a>
     </ul>
   </div>
   <div id="home">
-    <a id="home" class="smooth"></a>
     <div id="ursHeader" align="center">
       <h1>JHU Undergraduate Research Symposium 2018</h1>
       <div class="appearOnEntry">
@@ -55,7 +54,6 @@
     </div>
   </div>
   <div id="about">
-    <a id="about" class="smooth"></a>
     <title>About</title>
   </div>
 </body>
