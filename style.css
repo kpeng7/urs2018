@@ -81,7 +81,9 @@ h1 {
 
 #navigation {
   margin: 0;
-  position: fixed;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
   overflow: hidden;
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -90,7 +92,7 @@ h1 {
 
 /* Links inside the navbar */
 #navigation a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -112,6 +114,7 @@ h1 {
 }
 
 #home {
+  margin-top: -50px;
   background-color: lightblue;
   position: relative;
 }
