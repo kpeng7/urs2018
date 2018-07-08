@@ -55,6 +55,7 @@ html, body, ul {
   margin: 0;
   min-width: 1024px;
   position: relative;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -94,15 +95,14 @@ h1 {
 #navigation a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #555f61;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Change background on mouse-over */
+/* Change font color on mouse-over */
 #navigation a:hover {
-    background: #ddd;
     color: black;
 }
 
@@ -115,8 +115,10 @@ h1 {
 
 #home {
   margin-top: -50px;
-  background-color: lightblue;
+  background-image: url(./alpine_background.jpg);
+  background-size: cover;
   position: relative;
+  color: #555f61;
 }
 
 #ursHeader{
@@ -160,19 +162,6 @@ h1 {
   background-color: purple;
 }
 
-/* #border2 {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  align-self: start;
-  border-style: solid;
-  border-width: 5px;
+#thesymposium {
+  background-color: yellow;
 }
-
-#border {
-  margin-left: 15%;
-  width: 70%;
-  height: 100%;
-  position: absolute;
-  border-style: solid;
-  border-width: 1px;
-} */
