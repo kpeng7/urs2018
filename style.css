@@ -55,13 +55,13 @@ html, body, ul {
   margin: 0;
   min-width: 1024px;
   position: relative;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Belleza', sans-serif;
 }
 
 h1 {
   grid-row-start: 1;
   grid-row-end: 2;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Belleza', sans-serif;
   font-weight: 400;
   text-align: center;
   font-size: calc(60px + 1vw);
@@ -72,12 +72,12 @@ h1 {
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: 15% 30% 20% 20% 15%;
+  grid-template-columns: 15% 45% 5% 20% 15%;
   grid-template-rows: auto;
   opacity: 1;
   -webkit-animation-name: show;
   -webkit-animation-duration: 4s;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Belleza', sans-serif;
 }
 
 #navigation {
@@ -95,7 +95,7 @@ h1 {
 #navigation a {
     float: right;
     display: block;
-    color: #555f61;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -103,7 +103,7 @@ h1 {
 
 /* Change font color on mouse-over */
 #navigation a:hover {
-    color: black;
+    color: #555f61;
 }
 
 .page {
@@ -113,12 +113,47 @@ h1 {
   min-height: 700px;
 }
 
+#featureDivider {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    top: 0;
+    border-color: #888888;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+#featureDividerVert {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    align-self: center;
+    height: 100%;
+    width: 100px;
+    margin-left: 0;
+    border-color: black;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
 #home {
   margin-top: -50px;
+  position: relative;
+  color: black;
+}
+
+#home::after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-image: url(./alpine_background.jpg);
   background-size: cover;
-  position: relative;
-  color: #555f61;
+  opacity: 0.5;
+  z-index: -1;
+  position: absolute;
 }
 
 #ursHeader{
@@ -136,7 +171,7 @@ h1 {
 
 #info {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
     text-align: left;
@@ -151,7 +186,7 @@ h1 {
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Belleza', sans-serif;
     font-size: calc(20px + 0.5vw);
     text-align: center;
     align-self: center;
