@@ -122,6 +122,7 @@ h1 {
     border-color: #888888;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    -webkit-animation-duration: 4.5s;
 }
 #featureDividerVert {
     grid-row-start: 1;
@@ -135,6 +136,7 @@ h1 {
     border-color: #888888;
     border-left-width: 1px;
     border-left-style: solid;
+    -webkit-animation-duration: 4.5s;
 }
 
 #home {
