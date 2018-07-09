@@ -204,10 +204,20 @@ h1 {
     justify-content: center;
 }
 
-#about {
-  background-color: purple;
+#theSymposium {
+  position: relative;
 }
 
-#thesymposium {
-  background-color: yellow;
+#theSymposiumBackground {
+  position: absolute;
+  background-color: #FFF056;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+
+}
+
+#about {
+  position: relative;
+  background-color: black;
 }
