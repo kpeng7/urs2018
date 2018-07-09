@@ -132,7 +132,7 @@ h1 {
     height: 100%;
     width: 100px;
     margin-left: 0;
-    border-color: black;
+    border-color: #888888;
     border-left-width: 1px;
     border-left-style: solid;
 }
@@ -143,17 +143,26 @@ h1 {
   color: black;
 }
 
-#home::after {
+#homeBackground {
+  position: absolute;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
   content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-image: url(./alpine_background.jpg);
   background-size: cover;
-  opacity: 0.5;
   z-index: -1;
-  position: absolute;
+
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+      .parallax {
+          background-attachment: scroll;
+      }
+  }
 }
 
 #ursHeader{
@@ -162,8 +171,8 @@ h1 {
   left: 0;
   right: 0;
   margin: 0;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
   top: 15%;
   position: absolute;
   display: grid;
