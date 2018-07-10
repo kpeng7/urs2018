@@ -273,16 +273,18 @@ h1 {
 
 #theSymposiumSponsor {
   display: grid;
-  grid-template-columns: 200px 10px 250px auto;
+  grid-template-columns: 200px 20px 250px auto;
   grid-row-start: 6;
   grid-row-end: 8;
   grid-column-start: 3;
-  grid-column-end: 15;
+  grid-column-end: 12;
 }
 
 #logo {
   background-image: url(./nrp_logo.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   grid-column-start: 3;
   grid-column-end: 4;
   width: 100%;
