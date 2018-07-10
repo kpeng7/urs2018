@@ -92,6 +92,36 @@ h1 {
   content: "TBA";
 }
 
+.title {
+  grid-column-start: 3;
+  grid-column-end: 20;
+  font-size: calc(60px + 1vw);
+  font-weight: 400;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.content {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  grid-column-start: 3;
+  grid-column-end: 20;
+}
+
+.titleDivider {
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 21;
+  width: 100%;
+  margin-bottom: 0;
+  top: 0;
+  border-color: #888888;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
 #navigation {
   margin: 0;
   height: 50px;
@@ -228,28 +258,6 @@ h1 {
   min-height: 1000px;
 }
 
-#theSymposiumTitle{
-  grid-column-start: 3;
-  grid-column-end: 20;
-  font-size: calc(60px + 1vw);
-  font-weight: 400;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-#featureDividerSymposium {
-    grid-row-start: 5;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 21;
-    width: 100%;
-    margin-bottom: 0;
-    top: 0;
-    border-color: #888888;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-}
-
 #vertFeatureDividerSymposium {
   grid-row-start: 6;
   grid-row-end: 8;
@@ -303,13 +311,8 @@ h1 {
 }
 
 #theSymposiumContent {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
   grid-row-start: 8;
   grid-row-end: 19;
-  grid-column-start: 3;
-  grid-column-end: 20;
 }
 
 #theSymposiumBackground {
@@ -337,5 +340,14 @@ h1 {
 
 #about {
   position: relative;
-  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(10, 40px) auto repeat(10, 40px);
+  grid-template-rows: repeat(20, 40px);
+  color: black;
+  min-height: 1000px;
+}
+
+#aboutContent {
+  grid-row-start: 8;
+  grid-row-end: 19;
 }
