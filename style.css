@@ -271,6 +271,9 @@ h1 {
 }
 
 #theSymposiumContent {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   grid-row-start: 8;
   grid-row-end: 19;
   grid-column-start: 3;
