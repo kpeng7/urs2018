@@ -124,6 +124,7 @@ h1 {
     border-bottom-style: solid;
     -webkit-animation-duration: 4.5s;
 }
+
 #featureDividerVert {
     grid-row-start: 1;
     grid-row-end: 4;
@@ -208,6 +209,72 @@ h1 {
 
 #theSymposium {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 40px) auto repeat(10, 40px);
+  grid-template-rows: repeat(20, 40px);
+  color: black;
+  min-height: 1000px;
+}
+
+#theSymposiumTitle{
+  grid-column-start: 3;
+  grid-column-end: 20;
+  font-size: calc(60px + 1vw);
+  font-weight: 400;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#featureDividerSymposium {
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 21;
+    width: 100%;
+    margin-bottom: 0;
+    top: 0;
+    border-color: #888888;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+#vertFeatureDividerSymposium {
+  grid-row-start: 6;
+  grid-row-end: 8;
+  grid-column-start: 15;
+  grid-column-end: 15;
+  height: 80%;
+  width: 100px;
+  margin-left: 0;
+  border-color: #888888;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+#theSymposiumSponsor {
+  display: grid;
+  grid-template-columns: 200px 10px 250px auto;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  grid-column-start: 3;
+  grid-column-end: 15;
+}
+
+#logo {
+  background-image: url(./nrp_logo.png);
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#theSymposiumContent {
+  grid-row-start: 8;
+  grid-row-end: 19;
+  grid-column-start: 3;
+  grid-column-end: 20;
 }
 
 #theSymposiumBackground {
@@ -216,7 +283,21 @@ h1 {
   opacity: 0.5;
   height: 100%;
   width: 100%;
+  z-index: -1;
+}
 
+.font_8 {
+  color: black;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-family: 'Belleza', sans-serif;
 }
 
 #about {

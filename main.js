@@ -19,3 +19,17 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+$(document).ready(function() {
+
+        var documentEl = $(document),
+            parallaxBg = $('#homeBackground');
+
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollLeft();
+            parallaxBg.css('background-position', -currScrollPos + ' 0px');
+        });
+
+
+
+    })();
