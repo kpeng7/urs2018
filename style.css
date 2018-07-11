@@ -237,7 +237,7 @@ h1 {
     justify-self: stretch;
 }
 
-#apply {
+#applyButton {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -247,6 +247,21 @@ h1 {
     text-align: center;
     align-self: center;
     justify-content: center;
+}
+
+#applyButton a {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid;
+  border-color: black;
+}
+
+#applyButton a:hover {
+    opacity: 0.5;
 }
 
 #theSymposium {
@@ -335,7 +350,7 @@ h1 {
   font-variant-east-asian: normal;
   font-weight: normal;
   font-stretch: normal;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4em;
   font-family: 'Belleza', sans-serif;
 }
@@ -346,10 +361,19 @@ h1 {
   grid-template-columns: repeat(10, 40px) auto repeat(10, 40px);
   grid-template-rows: repeat(20, 40px);
   color: black;
-  min-height: 1000px;
+  min-height: 800px;
 }
 
 #aboutContent {
-  grid-row-start: 8;
+  grid-row-start: 6;
   grid-row-end: 19;
+}
+
+#keynote {
+  position: relative;
+  background-color: black;
+}
+
+#apply {
+
 }
