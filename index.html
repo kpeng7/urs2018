@@ -116,10 +116,77 @@
     </div>
   </div>
   <div id="apply" class="page">
-    <div class="title">
+    <div id="applyTitle" class="title">
       Apply Now!
     </div>
     <div class="titleDivider">
+    </div>
+    <div id="register">
+      <h2>URS 2018 Application</h2>
+      <div class="fields">
+        <div id="fullName" class="descriptor">
+          Full Name
+        </div>
+        <div id="firstName">
+          <input id="firstNameField" type="text" name="fname" required tabindex="1"/>
+          <label id="firstNameLabel" class="label"> First</label>
+          <div class="underline"> </div>
+        </div>
+        <div id="middleName">
+          <input id="middleNameField" type="text" name="mname" required tabindex="2"/>
+          <label id="middleNameLabel"> Middle</label>
+          <div class="underline"> </div>
+        </div>
+        <div id="lastName">
+          <input id="lastNameField" type="text" name="lname" required tabindex="3"/>
+          <label id="lastNameLabel"> Last</label>
+          <div class="underline"> </div>
+        </div>
+      </div>
+      <div class="fields">
+        <div id="backgroundInfo" class="descriptor">
+          Background Information
+        </div>
+        <div id="major">
+          <input id="majorField" type="text" name="major" required tabindex="4"/>
+          <label id="majorLabel"> Major</label>
+          <div class="underline"> </div>
+        </div>
+        <div id="graduationYear">
+          <input type="text" list="grad" name="grad"  required>
+          <datalist id="grad">
+            <option value="2018">
+            <option value="2019">
+            <option value="2020">
+            <option value="2021">
+            <option value="2022">
+            <option value="2023">
+          </datalist>
+        </input>
+        </div>
+      </div>
+      <div class="fields">
+        <div id="emailAddress" class="descriptor">
+          Email Address
+        </div>
+      </div>
+      <div class="fields">
+        <div id="phoneNumber" class="descriptor">
+          Phone Number
+        </div>
+      </div>
+      <div class="fields">
+        <div id="researchInformation" class="descriptor">
+          Research Information
+        </div>
+      </div>
+      <div id="inputContainer">
+        <input id="inputField" type="text" name="fname" required />
+        <label id="inputLabel">First Name</label>
+        <div id="inputProgress"></div>
+      </div>
+    </div>
+    <div id="applyBackground">
     </div>
   </div>
 </body>
