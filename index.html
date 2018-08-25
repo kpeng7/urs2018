@@ -153,7 +153,8 @@
           <div class="underline"> </div>
         </div>
         <div id="graduationYear">
-          <input type="text" list="grad" name="grad"  required>
+          <input type="text" list="grad" name="grad" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="4" required>
+          <label id="graduationYearLabel"> Graduation Year</label>
           <datalist id="grad">
             <option value="2018">
             <option value="2019">
@@ -167,23 +168,39 @@
       </div>
       <div class="fields">
         <div id="emailAddress" class="descriptor">
-          Email Address
+          Contact Information
         </div>
-      </div>
-      <div class="fields">
-        <div id="phoneNumber" class="descriptor">
-          Phone Number
+        <div id="email">
+          <input id="emailField" type="text" name="email" required tabindex="4"/>
+          <label id="emailLabel"> Email Address</label>
+          <div class="underline"> </div>
+        </div>
+        <div id="phone">
+          <input id="phoneField" type="text" name="phone" required tabindex="4"/>
+          <label id="phoneLable"> Phone Number</label>
+          <div class="underline"> </div>
         </div>
       </div>
       <div class="fields">
         <div id="researchInformation" class="descriptor">
           Research Information
         </div>
-      </div>
-      <div id="inputContainer">
-        <input id="inputField" type="text" name="fname" required />
-        <label id="inputLabel">First Name</label>
-        <div id="inputProgress"></div>
+        <div id="research">
+          <input id="researchField" type="text" name="research" required tabindex="4"/>
+          <label id="researchLabel"> Research Advisor / PI Name</label>
+          <div class="underline"> </div>
+        </div>
+        <p style="margin: 10">&nbsp;</p>
+        <div id="researchTitle">
+          <input id="researchTitleField" type="text" name="researchTitle" required tabindex="4"/>
+          <label id="researchTitleLabel"> Project Title</label>
+          <div class="underline"> </div>
+        </div>
+        <div id="researchDescription">
+          <input id="researchDescriptionField" type="text" name="researchDescription" required tabindex="4"/>
+          <label id="researchDescriptionLabel"> Abstract (250 word maximum)</label>
+          <div class="underline"> </div>
+        </div>
       </div>
     </div>
     <div id="applyBackground">

@@ -447,7 +447,7 @@ input {
 
 #lastName {
   grid-column-start: 15;
-  grid-column-end: 20;
+  grid-column-end: 21;
 }
 
 #major {
@@ -457,7 +457,32 @@ input {
 
 #graduationYear {
   grid-column-start: 17;
-  grid-column-end: 20;
+  grid-column-end: 21;
+}
+
+#email {
+  grid-column-start: 7;
+  grid-column-end: 14;
+}
+
+#phone {
+  grid-column-start: 15;
+  grid-column-end: 21;
+}
+
+#research{
+  grid-column-start: 7;
+  grid-column-end: 13;
+}
+
+#researchTitle {
+  grid-column-start: 14;
+  grid-column-end: 21;
+}
+
+#researchDescription{
+  grid-column-start: 7;
+  grid-column-end: 21;
 }
 
 /*
