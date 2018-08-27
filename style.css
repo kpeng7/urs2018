@@ -361,6 +361,20 @@ h2 {
   font-family: 'Belleza', sans-serif;
 }
 
+.font_9 {
+  color: black;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 23px;
+  line-height: 1.4em;
+  font-family: 'Belleza', sans-serif;
+}
+
 #about {
   color: black;
   min-height: 800px;
@@ -372,8 +386,72 @@ h2 {
 }
 
 #keynote {
+  background-color: white;
+  min-height: 1000px;
+}
+
+#keynoteSpeakerName {
+  margin-top: 15px;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  grid-column-start: 3;
+  grid-column-end: 20;
+  font-size: 40px;
+}
+
+#keynoteImage {
+  grid-row-start: 8;
+  grid-row-end: 20;
+  grid-column-start: 4;
+  grid-column-end: 19;
+  text-align: center;
+}
+
+#keynoteDescriptionTitle {
+  grid-row-start: 17;
+  grid-column-start: 4;
+  grid-column-end: 19;
+  margin-top: 10px;
+}
+
+#keynoteDescription {
+  grid-row-start: 20;
+  grid-column-start: 4;
+  grid-column-end: 19;
+}
+
+.studentRooms {
+  margin-top: 10px;
+  font-size: 45px;
   position: relative;
-  background-color: black;
+  grid-row-start: 6;
+  grid-column-start: 3;
+  grid-column-end: 20;
+}
+
+.student {
+  height: auto;
+  display: grid;
+  grid-template-columns: 150px 10px auto
+}
+
+.timeslot {
+  margin-top: 10px;
+  font-size: 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.studentName {
+  font-size: 35px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.studentResearchTitle {
+  font-size: 20px;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 #apply {
