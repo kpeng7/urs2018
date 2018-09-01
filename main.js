@@ -51,20 +51,6 @@ $(".tipTitle").click(function() {
   $('#tip1Description').hide();
 });
 
-var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbwGagnJa7Tqy9RCjM5IbfQLWM4xTuV0_yITPx9jJKyJmvd4iCQ/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
 
 // var resizeSchedule = function() {
 //   var w = $('.content').width();
