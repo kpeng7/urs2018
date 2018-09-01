@@ -59,7 +59,7 @@
 html, body, ul {
   padding: 0;
   margin: 0;
-  min-width: 1024px;
+  min-width: 1280px;
   position: relative;
   font-family: 'Belleza', sans-serif;
 }
@@ -286,8 +286,8 @@ h2 {
 #vertFeatureDividerSymposium {
   grid-row-start: 6;
   grid-row-end: 8;
-  grid-column-start: 16;
-  grid-column-end: 16;
+  grid-column-start: 13;
+  grid-column-end: 13;
   height: 80%;
   width: 100px;
   margin-left: 0;
@@ -322,16 +322,18 @@ h2 {
   padding-right: 10px;
   grid-row-start: 6;
   grid-row-end: 8;
-  grid-column-start: 12;
-  grid-column-end: 16;
+  grid-column-start: 11;
+  grid-column-end: 13;
+  margin-left: -40px;
   font-size: 30px;
+  text-align: right;
 }
 
 #theSymposiumTime {
   padding-top: 10px;
   grid-row-start: 6;
   grid-row-end: 8;
-  grid-column-start: 16;
+  grid-column-start: 13;
   grid-column-end: 21;
   font-size: 30px;
   text-align: center;
@@ -587,11 +589,35 @@ h2 {
   z-index: -1;
 }
 
-#apply {
-  grid-template-rows: repeat(20, 40px) auto repeat(20, 40px);
-  min-height: 1200px;
+#applyInformation {
+  grid-row-start: 6;
 }
 
+.applyDescription {
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+#applyNow {
+  float: right;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 160px;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Belleza', sans-serif;
+}
+
+#applyNow:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: grey;
+    border: 3px solid grey;
+}
 
 #applyBackground {
   position: absolute;
