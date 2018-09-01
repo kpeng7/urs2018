@@ -52,7 +52,7 @@ $(".tipTitle").click(function() {
 });
 
 var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbx2RQLqCU87frZh6dm4_U2OYtkOAsTIt1Ze9fMTVTdKfSZNxEWJ/exec'
+    url = 'https://script.google.com/macros/s/AKfycbwGagnJa7Tqy9RCjM5IbfQLWM4xTuV0_yITPx9jJKyJmvd4iCQ/exec'
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
