@@ -87,6 +87,8 @@
       <p class="font_8">URS 2018 will be held on Monday, October 8, with student presentations scheduled from 5:00-7:45 pm. <span style="text-decoration:underline;"><a href="#keynote" class="smooth">Dr. Gregory Berns</a></span> will then deliver the keynote address at 8:00 pm.</p>
       <p class="font_8">There will be a reception following the keynote speech.</p>
     </div>
+    <div id="aboutBackground">
+    </div>
   </div>
   <div id="keynote" class="page">
     <div class="title">
@@ -98,7 +100,7 @@
       Gregory S. Berns, M.D., Ph.D.
     </div>
     <div id="keynoteImage">
-        <img src="berns.jpg" alt="Dr. Gregory Berns" class="center" width="50%">
+        <img src="berns.jpg" alt="Dr. Gregory Berns" class="center" height="370px">
     </div>
     <div id="keynoteDescriptionTitle">
       <p class="font_9" font-size="30px">Distinguished Professor of Neuroeconomics & Psychology, Emory University
@@ -108,45 +110,142 @@
       <p class="font_8"><!--Insert Berns bio here--></p>
       <p class="font_8">​</p>
     </div>
+    <div id="keynoteSpeakerBackground">
+    </div>
   </div>
-  <div id="students" class="page">
+  <div id="students" class="page" style="display:none;">
     <div class="title">
       Student Speakers
     </div>
     <div class="titleDivider">
     </div>
-    <div class="studentRooms">
-      Bloomberg 361
+    <div id="room1" class="studentRooms">
+      Room Number
       <p></p>
       <div class="student">
         <div class="timeslot">
           5:00 - 5:15PM
         </div>
         <div class="studentName">
-          Ricardo Villaneuva
+          Student Name
         </div>
         <div class="studentResearchTitle">
-          The Effectiveness of rTMS in the Treatment of Depression Based on Patient Demographics, Medication history and Treatment Type
+          Research Title
         </div>
       </div>
     </div>
-    <div class="studentRooms">
+    <div id="room2" class="studentRooms">
     </div>
-    <div class="studentRooms">
+    <div id="room3" class="studentRooms">
     </div>
   </div>
-  <div id="tips" class="page">
-    <div class="title">
-      General Presentation Tips
-    </div>
-    <div class="titleDivider">
-    </div>
+  <div id="tips" class="page" style="display:none;">
+    <button type="button" onclick="modifyRows()">
+    </button>
+      <div id="tipPageTitle" class="title">
+        General Presentation Tips
+      </div>
+      <div id="tipTitleDivider" class="titleDivider">
+      </div>
+      <div id="generalPresContent">
+        <div id="generalPresColumn1">
+          <div id="tip1" class="tipTitle">
+            Rights to Use Material
+          </div>
+          <div id="tip1Description" class="tip">
+            Before using any text, image, or other material, make sure that you have the rights to use it. Complex laws and social rules govern how much of someone's work you can reproduce in a presentation. Ignorance is no defense. Check that you are not infringing on copyright or other laws or on the customs of academic discourse when using material.
+          </div>
+          <div id="tip2" class="tipTitle">
+            Visual Contrast
+          </div>
+          <div class="tip">
+            Contrasts in brightness and tone between illustrations and backgrounds improves legibility. The best color combinations include white letters on medium blue, or black on yellow. Never use black letters on a dark background. Many people are red/green color blind - avoid using red and green next to each other.
+          </div>
+          <div id="tip3" class="tipTitle">
+            Experimental
+          </div>
+          <div class="tip">
+            There is no time in a 10-minute paper to teach standard technology. Unless the paper directly examines this technology, only mention what is necessary to develop the theme.
+          </div>
+          <div id="tip4" class="tipTitle">
+            Graphic Format
+          </div>
+          <div class="tip">
+            In graphs, qualitative relationships are emphasized at the expense of precise numerical values, while in tables, the reverse is true. If a qualitative statement, such as "Flow rate increased markedly immediately after stimulation," is the main point of the image, the purpose is better served with a graphic format. A good place for detailed, tabular data is in an image or two held in reserve in case of questions.
+          </div>
+          <div id="tip5" class="tipTitle">
+            Free of Nonessential Information
+          </div>
+          <div class="tip">
+            If information does not directly support the main point of the image, reserve this content for questions.
+          </div>
+          <div id="tip6" class="tipTitle">
+            Simple Format
+          </div>
+          <div class="tip">
+            With a simple, uncluttered format, the image is easy to design and directs audience attention to the main point.
+          </div>
+          <div id="tip7" class="tipTitle">
+            Clear Purpose
+          </div>
+          <div class="tip">
+            An effective image should have a main point, instead of a collection of available data. If the central theme of the image is not visible, improve the paper by revising or deleting the image.
+          </div>
+        </div>
+        <div id="generalPresColumn2">
+          <div class="tipTitle">
+          </div>
+          <div class="tip">
+          </div>
+        </div>
+      </div>
   </div>
   <div id="schedule" class="page">
     <div class="title">
-      Event Schedule
+      Tentative Event Schedule
     </div>
     <div class="titleDivider">
+    </div>
+    <div id="scheduleTitle" class="content">
+      <p align="left">URS 2018
+        <span style="float:right;">Monday, October 8</span></p>
+    </div>
+    <div id="scheduleContent">
+      <div class="scheduleEvent" style="margin-top:20px;">
+        Student Presentations
+      </div>
+      <div class="scheduleTime" style="margin-top:20px;">
+        &nbsp5:00pm - 7:45pm
+      </div>
+      <div class="dots" style="margin-top:20px;">
+        &nbsp................................................................
+      </div>
+      <div class="scheduleLoc">
+        Locations TBA
+      </div>
+      <div class="scheduleEvent">
+        Keynote Address
+      </div>
+      <div class="scheduleTime">
+        &nbsp8:00pm - 9:00pm
+      </div>
+      <div class="dots">
+        &nbsp.................................................................
+      </div>
+      <div class="scheduleLoc">
+        Bloomberg 272
+      </div>
+      <div class="scheduleEvent">
+        Reception
+      </div>
+      <div class="scheduleTime">
+        &nbsp9:00pm - 10:00pm
+      </div>
+      <div class="dots">
+        &nbsp.................................................................
+      </div>
+    </div>
+    <div id="scheduleBackground">
     </div>
   </div>
   <div id="apply" class="page">
@@ -167,7 +266,7 @@
           <div class="underline"> </div>
         </div>
         <div id="middleName">
-          <input id="middleNameField" type="text" name="mname" required tabindex="2"/>
+          <input id="middleNameField" type="text" name="mname" tabindex="2"/>
           <label id="middleNameLabel"> Middle</label>
           <div class="underline"> </div>
         </div>
@@ -236,9 +335,14 @@
           <div class="underline"> </div>
         </div>
       </div>
+      <div>
+        <button type="submit" id="submit-form">Submit</button>
+      </div>
     </div>
     <div id="applyBackground">
     </div>
+  </div>
+  <div id="footer">
   </div>
 </body>
 </html>

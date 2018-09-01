@@ -29,7 +29,46 @@ $(document).ready(function() {
             var currScrollPos = documentEl.scrollLeft();
             parallaxBg.css('background-position', -currScrollPos + ' 0px');
         });
-
-
-
     })();
+
+function modifyRows() {
+    var tipsTotalHeight1 = 240.0 + document.getElementById('generalPresColumn1').offsetHeight;
+    var tipsTotalHeight2 = 240.0 + document.getElementById('generalPresColumn2').offsetHeight;
+    var h = Math.max(tipsTotalHeight1, tipsTotalHeight2);
+    document.getElementById('generalPresColumn2').style.border = "thin dotted red";
+    document.documentElement.style.setProperty("--tipsRowNum", Math.ceil(h/40.0));
+    $('#tip1Description').toggle();
+}
+
+$(document).ready(function(){
+    $(".tipTitle").onclick(function(){
+      var num = this.id.slice(3);
+      $('#tip'+num+'Description').toggle();
+    });
+});
+
+$(".tipTitle").click(function() {
+  $('#tip1Description').hide();
+});
+
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbx2RQLqCU87frZh6dm4_U2OYtkOAsTIt1Ze9fMTVTdKfSZNxEWJ/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+
+// var resizeSchedule = function() {
+//   var w = $('.content').width();
+//   $('#scheduleContent').width(w);
+// }
+// $(document).ready(resizeSchedule);
+// $(window).resize(resizeSchedule);

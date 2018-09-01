@@ -52,6 +52,10 @@
     }
 }
 
+:root {
+  --tipsRowNum: 20;
+}
+
 html, body, ul {
   padding: 0;
   margin: 0;
@@ -87,11 +91,11 @@ h2 {
 }
 
 .date::after {
-  content: "TBA";
+  content: "October 8, 2018";
 }
 
 .time::after {
-  content:"TBA";
+  content:"5:00pm - 10:00pm";
 }
 
 .location::after {
@@ -385,9 +389,31 @@ h2 {
   grid-row-end: 19;
 }
 
+#aboutBackground {
+  position: absolute;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(./water_background.jpg);
+  background-size: cover;
+  z-index: -1;
+
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+      .parallax {
+          background-attachment: scroll;
+      }
+  }
+}
+
 #keynote {
-  background-color: white;
-  min-height: 1000px;
+  min-height: 900px;
+  height: auto;
 }
 
 #keynoteSpeakerName {
@@ -420,6 +446,15 @@ h2 {
   grid-column-end: 19;
 }
 
+#keynoteSpeakerBackground {
+  position: absolute;
+  background-color: #4e0270;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .studentRooms {
   margin-top: 10px;
   font-size: 45px;
@@ -430,6 +465,7 @@ h2 {
 }
 
 .student {
+  margin-left: 80px;
   height: auto;
   display: grid;
   grid-template-columns: 150px 10px auto
@@ -452,6 +488,102 @@ h2 {
   font-size: 20px;
   grid-column-start: 3;
   grid-column-end: 4;
+}
+
+#tips {
+  grid-template-rows: repeat(var(--tipsRowNum), 40px);
+  height: max-content;
+  border-color: green;
+  border-style: inset;
+  border-width: 10px;
+  padding-bottom: 40px;
+}
+
+#generalPresContent {
+  grid-column-start: 4;
+  grid-column-end: 20;
+  grid-row-start: 7;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.tipTitle {
+  font-size: 30px;
+  cursor: pointer;
+  border-color: black;
+  border-style: inset;
+}
+
+.tip {
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+#generalPresColumn1 {
+  height: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-right: 40px;
+}
+
+#generalPresColumn2 {
+  height: auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-style: dashed;
+  margin-left: 40px;
+}
+
+#scheduleTitle {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  font-size: 45px;
+}
+
+.scheduleEvent {
+  display: inline-block;
+  width: auto;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.dots{
+  display: block;
+  float: none;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.scheduleTime {
+  width: auto;
+  float: right;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.scheduleLoc {
+  margin-left: 80px;
+  margin-bottom: 15px;
+}
+
+#scheduleContent {
+  font-size: 30px;
+  grid-column-start: 6;
+  grid-column-end: 19;
+  grid-row-start: 9;
+  display: inline;
+  width: 100%
+}
+
+#scheduleBackground {
+  position: absolute;
+  background-color: #c08cd8;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #apply {
@@ -561,6 +693,10 @@ input {
 #researchDescription{
   grid-column-start: 7;
   grid-column-end: 21;
+}
+
+#footer {
+  height: 100px;
 }
 
 /*
