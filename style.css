@@ -538,6 +538,10 @@ h2 {
   margin-left: 40px;
 }
 
+#schedule {
+  min-height: 800px;
+}
+
 #scheduleTitle {
   grid-row-start: 6;
   grid-row-end: 7;
@@ -595,7 +599,7 @@ h2 {
 
 .applyDescription {
   font-size: 30px;
-  margin-left: 80px;
+  margin-left: 160px;
 }
 
 #applyNow {
