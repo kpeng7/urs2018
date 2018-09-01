@@ -545,7 +545,7 @@ h2 {
   display: inline-block;
   width: auto;
   float: left;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .dots{
@@ -553,19 +553,19 @@ h2 {
   float: none;
   white-space: nowrap;
   overflow: hidden;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .scheduleTime {
   width: auto;
   float: right;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .scheduleLoc {
   margin-left: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 #scheduleContent {
