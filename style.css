@@ -103,8 +103,8 @@ h2 {
 }
 
 .title {
-  grid-column-start: 3;
-  grid-column-end: 20;
+  grid-column-start: 5;
+  grid-column-end: 18;
   font-size: calc(60px + 1vw);
   font-weight: 400;
   grid-row-start: 3;
@@ -115,15 +115,15 @@ h2 {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  grid-column-start: 3;
-  grid-column-end: 20;
+  grid-column-start: 5;
+  grid-column-end: 18;
 }
 
 .titleDivider {
   grid-row-start: 5;
   grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 21;
+  grid-column-start: 4;
+  grid-column-end: 19;
   width: 100%;
   margin-bottom: 0;
   top: 0;
@@ -156,6 +156,22 @@ h2 {
 /* Change font color on mouse-over */
 #navigation a:hover {
     color: #555f61;
+}
+
+#flag {
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 90px;
+  line-height: 1.0;
+  position: fixed;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 10px;
+  z-index: 3;
 }
 
 .page {
@@ -301,7 +317,7 @@ h2 {
   grid-template-columns: 200px 20px 250px auto;
   grid-row-start: 6;
   grid-row-end: 8;
-  grid-column-start: 3;
+  grid-column-start: 5;
   grid-column-end: 12;
 }
 
@@ -334,7 +350,7 @@ h2 {
   grid-row-start: 6;
   grid-row-end: 8;
   grid-column-start: 13;
-  grid-column-end: 21;
+  grid-column-end: 19;
   font-size: 30px;
   text-align: center;
 }
@@ -415,8 +431,8 @@ h2 {
 }
 
 #keynote {
-  min-height: 900px;
-  height: auto;
+  min-height: 1500px;
+  height: fit-content;
 }
 
 #keynoteSpeakerName {
@@ -445,8 +461,9 @@ h2 {
 
 #keynoteDescription {
   grid-row-start: 20;
-  grid-column-start: 4;
-  grid-column-end: 19;
+  grid-column-start: 6;
+  grid-column-end: 17;
+  height: fit-content;
 }
 
 #keynoteSpeakerBackground {
