@@ -616,7 +616,7 @@ h2 {
 
 .applyDescription {
   font-size: 30px;
-  margin-left: 240px;
+  margin-left: 140px;
 }
 
 #applyNow {
@@ -624,7 +624,7 @@ h2 {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: 240px;
+  margin-right: 140px;
   background: rgba(255, 255, 255, 0.2);
   color: black;
   border: 3px solid black;
