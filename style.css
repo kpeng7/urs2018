@@ -615,8 +615,19 @@ h2 {
 }
 
 .applyDescription {
+  float:left;
   font-size: 30px;
   margin-left: 140px;
+  line-height: 50px;
+}
+
+#applyDeadline {
+  color: red;
+  font-size: 30px;
+  width: 300px;
+  margin-right: 70px;
+  float: right;
+  text-align: center;
 }
 
 #applyNow {
