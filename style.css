@@ -181,6 +181,7 @@ h2 {
   grid-template-rows: repeat(20, 40px);
   top: 0;
   margin: 0;
+  height: 768px;
   height: 100vh;
   min-height: 700px;
 }
