@@ -66,7 +66,7 @@ html, body, ul {
 
 h1 {
   -ms-grid-row: 1;
-  -ms-grid-row-end: 1;
+  -ms-grid-row-span: 0;
   grid-row-start: 1;
   grid-row-end: 2;
   font-family: 'Belleza', sans-serif;
@@ -83,7 +83,7 @@ h2 {
   margin-top: 5%;
   -ms-grid-row: 2;
   grid-row-start: 2;
-  -ms-grid-row-end: 3;
+  -ms-grid-row-span: 1;
   grid-row-end: 3;
   display: -ms-grid;
   display: grid;
@@ -118,7 +118,7 @@ h2 {
   font-weight: 400;
   -ms-grid-row: 3;
   grid-row-start: 3;
-  -ms-grid-row-end: 4;
+  -ms-grid-row-span: 1;
   grid-row-end: 4;
 }
 
@@ -134,7 +134,7 @@ h2 {
 
 .titleDivider {
   -ms-grid-row: 5;
-  -ms-grid-row-end: 5;
+  -ms-grid-row-span: 0;
   -ms-grid-column: 4;
   -ms-grid-column-span: 15;
   grid-row-start: 5;
@@ -220,7 +220,7 @@ h2 {
 
 #featureDividerVert {
     -ms-grid-row: 1;
-    -ms-grid-row-end: 4;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 0;
     grid-row-start: 1;
@@ -285,7 +285,7 @@ h2 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     -ms-grid-row: 1;
-    -ms-grid-row-end: 4;
+    -ms-grid-row-span: 3;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -301,7 +301,7 @@ h2 {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     -ms-grid-row: 2;
-    -ms-grid-row-end: 3;
+    -ms-grid-row-span: 1;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -335,7 +335,7 @@ h2 {
 
 #vertFeatureDividerSymposium {
   -ms-grid-row: 6;
-  -ms-grid-row-end: 8;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 13;
   -ms-grid-column-span: 0;
   grid-row-start: 6;
@@ -355,7 +355,7 @@ h2 {
   display: -ms-grid;
   -ms-grid-columns: 200px 20px 250px auto;
   -ms-grid-row: 6;
-  -ms-grid-row-end: 8;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 5;
   -ms-grid-column-span: 7;
   grid-template-columns: 200px 20px 250px auto;
@@ -383,7 +383,7 @@ h2 {
   padding-top: 10px;
   padding-right: 10px;
   -ms-grid-row: 6;
-  -ms-grid-row-end: 8;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 11;
   -ms-grid-column-span: 2;
   grid-row-start: 6;
@@ -398,7 +398,7 @@ h2 {
 #theSymposiumTime {
   padding-top: 10px;
   -ms-grid-row: 6;
-  -ms-grid-row-end: 8;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 13;
   -ms-grid-column-span: 6;
   grid-row-start: 6;
@@ -412,7 +412,7 @@ h2 {
 #theSymposiumContent {
   -ms-grid-row: 8;
   grid-row-start: 8;
-  -ms-grid-row-end: 19;
+  -ms-grid-row-span: 11;
   grid-row-end: 19;
 }
 
@@ -463,7 +463,7 @@ h2 {
   grid-row-start: 6;
   -ms-grid-row: 6;
   grid-row-end: 19;
-  -ms-grid-row-end: 19;
+  -ms-grid-row-span: 13;
 }
 
 #aboutBackground {
@@ -496,7 +496,7 @@ h2 {
 #keynoteSpeakerName {
   margin-top: 15px;
   -ms-grid-row: 6;
-  -ms-grid-row-end: 8;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 17;
   grid-row-start: 6;
@@ -508,7 +508,7 @@ h2 {
 
 #keynoteImage {
   -ms-grid-row: 8;
-  -ms-grid-row-end: 20;
+  -ms-grid-row-span: 12;
   -ms-grid-column: 4;
   -ms-grid-column-span: 15;
   grid-row-start: 8;
@@ -654,7 +654,7 @@ h2 {
 #scheduleTitle {
   -ms-grid-row: 6;
   grid-row-start: 6;
-  -ms-grid-row-end: 7;
+  -ms-grid-row-span: 1;
   grid-row-end: 7;
   font-size: 45px;
 }
