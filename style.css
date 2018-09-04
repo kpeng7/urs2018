@@ -87,9 +87,9 @@ h2 {
   grid-row-end: 3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-template-columns: 15% 45% 5% 20% 15%;
+  -ms-grid-columns: 15% 45% 5% 20% 15%;
   grid-template-columns: 15% 45% 5% 20% 15%;
-  -ms-grid-template-rows: auto;
+  -ms-grid-rows: auto;
   grid-template-rows: auto;
   opacity: 1;
   -webkit-animation-name: show;
@@ -196,9 +196,9 @@ h2 {
   display: grid;
   display: -ms-grid;
   grid-template-columns: repeat(10, 40px) auto repeat(10, 40px);
-  -ms-grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px auto 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  -ms-grid-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px auto 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
   grid-template-rows: repeat(20, 40px);
-  -ms-grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  -ms-grid-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
   top: 0;
   margin: 0;
   height: 768px;
@@ -603,11 +603,16 @@ h2 {
 }
 
 #generalPresContent {
+  -ms-grid-column-start: 4;
+  -ms-grid-column-end: 20;
+  -ms-grid-row-start: 7;
   grid-column-start: 4;
   grid-column-end: 20;
   grid-row-start: 7;
   height: max-content;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
 }
 
@@ -625,14 +630,18 @@ h2 {
 
 #generalPresColumn1 {
   height: auto;
+  -ms-grid-column-start: 1;
   grid-column-start: 1;
+  -ms-grid-column-end: 2;
   grid-column-end: 2;
   margin-right: 40px;
 }
 
 #generalPresColumn2 {
   height: auto;
+  -ms-grid-column-start: 2;
   grid-column-start: 2;
+  -ms-grid-column-end: 3;
   grid-column-end: 3;
   border-style: dashed;
   margin-left: 40px;
@@ -643,7 +652,9 @@ h2 {
 }
 
 #scheduleTitle {
+  -ms-grid-row-start: 6;
   grid-row-start: 6;
+  -ms-grid-row-end: 7;
   grid-row-end: 7;
   font-size: 45px;
 }
@@ -677,6 +688,9 @@ h2 {
 
 #scheduleContent {
   font-size: 30px;
+  -ms-grid-column-start: 6;
+  -ms-grid-column-end: 19;
+  -ms-grid-row-start: 9;
   grid-column-start: 6;
   grid-column-end: 19;
   grid-row-start: 9;
@@ -694,6 +708,7 @@ h2 {
 }
 
 #applyInformation {
+  -ms-grid-row-start: 6;
   grid-row-start: 6;
 }
 
