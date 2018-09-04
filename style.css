@@ -210,8 +210,6 @@ h2 {
     -ms-display: none;
     -ms-grid-row: 1;
     -ms-grid-row-span: 0;
-    grid-row-start: 1;
-    grid-row-end: 1;
     position: absolute;
     -ms-position: initial;
     width: 80%;
