@@ -65,7 +65,7 @@ html, body, ul {
 }
 
 h1 {
-  -ms-grid-row-start: 1;
+  -ms-grid-row: 1;
   -ms-grid-row-end: 1;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -81,7 +81,7 @@ h2 {
 }
 .appearOnEntry{
   margin-top: 5%;
-  -ms-grid-row-start: 2;
+  -ms-grid-row: 2;
   grid-row-start: 2;
   -ms-grid-row-end: 3;
   grid-row-end: 3;
@@ -110,13 +110,13 @@ h2 {
 }
 
 .title {
-  -ms-grid-column-start: 5;
+  -ms-grid-column: 5;
   grid-column-start: 5;
   -ms-grid-column-end: 18;
   grid-column-end: 18;
   font-size: calc(60px + 1vw);
   font-weight: 400;
-  -ms-grid-row-start: 3;
+  -ms-grid-row: 3;
   grid-row-start: 3;
   -ms-grid-row-end: 4;
   grid-row-end: 4;
@@ -126,16 +126,16 @@ h2 {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  -ms-grid-column-start: 5;
+  -ms-grid-column: 5;
   -ms-grid-column-end: 18;
   grid-column-start: 5;
   grid-column-end: 18;
 }
 
 .titleDivider {
-  -ms-grid-row-start: 5;
+  -ms-grid-row: 5;
   -ms-grid-row-end: 5;
-  -ms-grid-column-start: 4;
+  -ms-grid-column: 4;
   -ms-grid-column-end: 19;
   grid-row-start: 5;
   grid-row-end: 5;
@@ -219,9 +219,9 @@ h2 {
 }
 
 #featureDividerVert {
-    -ms-grid-row-start: 1;
+    -ms-grid-row: 1;
     -ms-grid-row-end: 4;
-    -ms-grid-column-start: 3;
+    -ms-grid-column: 3;
     -ms-grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
@@ -282,9 +282,9 @@ h2 {
 }
 
 #info {
-    -ms-grid-column-start: 2;
+    -ms-grid-column: 2;
     -ms-grid-column-end: 3;
-    -ms-grid-row-start: 1;
+    -ms-grid-row: 1;
     -ms-grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -298,9 +298,9 @@ h2 {
 }
 
 #applyButton {
-    -ms-grid-column-start: 4;
+    -ms-grid-column: 4;
     -ms-grid-column-end: 5;
-    -ms-grid-row-start: 2;
+    -ms-grid-row: 2;
     -ms-grid-row-end: 3;
     grid-column-start: 4;
     grid-column-end: 5;
@@ -334,9 +334,9 @@ h2 {
 }
 
 #vertFeatureDividerSymposium {
-  -ms-grid-row-start: 6;
+  -ms-grid-row: 6;
   -ms-grid-row-end: 8;
-  -ms-grid-column-start: 13;
+  -ms-grid-column: 13;
   -ms-grid-column-end: 13;
   grid-row-start: 6;
   grid-row-end: 8;
@@ -353,10 +353,10 @@ h2 {
 #theSymposiumSponsor {
   display: grid;
   display: -ms-grid;
-  -ms-grid-template-columns: 200px 20px 250px auto;
-  -ms-grid-row-start: 6;
+  -ms-grid-columns: 200px 20px 250px auto;
+  -ms-grid-row: 6;
   -ms-grid-row-end: 8;
-  -ms-grid-column-start: 5;
+  -ms-grid-column: 5;
   -ms-grid-column-end: 12;
   grid-template-columns: 200px 20px 250px auto;
   grid-row-start: 6;
@@ -370,7 +370,7 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  -ms-grid-column-start: 3;
+  -ms-grid-column: 3;
   grid-column-start: 3;
   -ms-grid-column-end: 4;
   grid-column-end: 4;
@@ -382,9 +382,9 @@ h2 {
 #theSymposiumDate {
   padding-top: 10px;
   padding-right: 10px;
-  -ms-grid-row-start: 6;
+  -ms-grid-row: 6;
   -ms-grid-row-end: 8;
-  -ms-grid-column-start: 11;
+  -ms-grid-column: 11;
   -ms-grid-column-end: 13;
   grid-row-start: 6;
   grid-row-end: 8;
@@ -397,9 +397,9 @@ h2 {
 
 #theSymposiumTime {
   padding-top: 10px;
-  -ms-grid-row-start: 6;
+  -ms-grid-row: 6;
   -ms-grid-row-end: 8;
-  -ms-grid-column-start: 13;
+  -ms-grid-column: 13;
   -ms-grid-column-end: 19;
   grid-row-start: 6;
   grid-row-end: 8;
@@ -410,7 +410,7 @@ h2 {
 }
 
 #theSymposiumContent {
-  -ms-grid-row-start: 8;
+  -ms-grid-row: 8;
   grid-row-start: 8;
   -ms-grid-row-end: 19;
   grid-row-end: 19;
@@ -461,7 +461,7 @@ h2 {
 
 #aboutContent {
   grid-row-start: 6;
-  -ms-grid-row-start: 6;
+  -ms-grid-row: 6;
   grid-row-end: 19;
   -ms-grid-row-end: 19;
 }
@@ -495,9 +495,9 @@ h2 {
 
 #keynoteSpeakerName {
   margin-top: 15px;
-  -ms-grid-row-start: 6;
+  -ms-grid-row: 6;
   -ms-grid-row-end: 8;
-  -ms-grid-column-start: 3;
+  -ms-grid-column: 3;
   -ms-grid-column-end: 20;
   grid-row-start: 6;
   grid-row-end: 8;
@@ -507,9 +507,9 @@ h2 {
 }
 
 #keynoteImage {
-  -ms-grid-row-start: 8;
+  -ms-grid-row: 8;
   -ms-grid-row-end: 20;
-  -ms-grid-column-start: 4;
+  -ms-grid-column: 4;
   -ms-grid-column-end: 19;
   grid-row-start: 8;
   grid-row-end: 20;
@@ -519,8 +519,8 @@ h2 {
 }
 
 #keynoteDescriptionTitle {
-  -ms-grid-row-start: 17;
-  -ms-grid-column-start: 4;
+  -ms-grid-row: 17;
+  -ms-grid-column: 4;
   -ms-grid-column-end: 19;
   grid-row-start: 17;
   grid-column-start: 4;
@@ -529,8 +529,8 @@ h2 {
 }
 
 #keynoteDescription {
-  -ms-grid-row-start: 20;
-  -ms-grid-column-start: 6;
+  -ms-grid-row: 20;
+  -ms-grid-column: 6;
   -ms-grid-column-end: 17;
   grid-row-start: 20;
   grid-column-start: 6;
@@ -551,8 +551,8 @@ h2 {
   margin-top: 10px;
   font-size: 45px;
   position: relative;
-  -ms-grid-row-start: 6;
-  -ms-grid-column-start: 3;
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
   -ms-grid-column-end: 20;
   grid-row-start: 6;
   grid-column-start: 3;
@@ -564,14 +564,14 @@ h2 {
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-template-columns: 150px 10px auto;
+  -ms-grid-columns: 150px 10px auto;
   grid-template-columns: 150px 10px auto;
 }
 
 .timeslot {
   margin-top: 10px;
   font-size: 20px;
-  -ms-grid-column-start: 1;
+  -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-column-end: 2;
   grid-column-end: 2;
@@ -579,7 +579,7 @@ h2 {
 
 .studentName {
   font-size: 35px;
-  -ms-grid-column-start: 3;
+  -ms-grid-column: 3;
   grid-column-start: 3;
   -ms-grid-column-end: 4;
   grid-column-end: 4;
@@ -587,7 +587,7 @@ h2 {
 
 .studentResearchTitle {
   font-size: 20px;
-  -ms-grid-column-start: 3;
+  -ms-grid-column: 3;
   grid-column-start: 3;
   -ms-grid-column-end: 4;
   grid-column-end: 4;
@@ -603,9 +603,9 @@ h2 {
 }
 
 #generalPresContent {
-  -ms-grid-column-start: 4;
+  -ms-grid-column: 4;
   -ms-grid-column-end: 20;
-  -ms-grid-row-start: 7;
+  -ms-grid-row: 7;
   grid-column-start: 4;
   grid-column-end: 20;
   grid-row-start: 7;
@@ -630,7 +630,7 @@ h2 {
 
 #generalPresColumn1 {
   height: auto;
-  -ms-grid-column-start: 1;
+  -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-column-end: 2;
   grid-column-end: 2;
@@ -639,7 +639,7 @@ h2 {
 
 #generalPresColumn2 {
   height: auto;
-  -ms-grid-column-start: 2;
+  -ms-grid-column: 2;
   grid-column-start: 2;
   -ms-grid-column-end: 3;
   grid-column-end: 3;
@@ -652,7 +652,7 @@ h2 {
 }
 
 #scheduleTitle {
-  -ms-grid-row-start: 6;
+  -ms-grid-row: 6;
   grid-row-start: 6;
   -ms-grid-row-end: 7;
   grid-row-end: 7;
@@ -688,9 +688,9 @@ h2 {
 
 #scheduleContent {
   font-size: 30px;
-  -ms-grid-column-start: 6;
+  -ms-grid-column: 6;
   -ms-grid-column-end: 19;
-  -ms-grid-row-start: 9;
+  -ms-grid-row: 9;
   grid-column-start: 6;
   grid-column-end: 19;
   grid-row-start: 9;
@@ -708,7 +708,7 @@ h2 {
 }
 
 #applyInformation {
-  -ms-grid-row-start: 6;
+  -ms-grid-row: 6;
   grid-row-start: 6;
 }
 
