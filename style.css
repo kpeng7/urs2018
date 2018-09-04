@@ -210,8 +210,8 @@ h2 {
     -ms-display: none;
     -ms-grid-row: 1;
     -ms-grid-row-span: 0;
-    position: absolute;
     -ms-position: initial;
+    position: absolute;
     width: 80%;
     margin-left: 10%;
     margin-bottom: 0;
@@ -781,4 +781,14 @@ h2 {
 
 #footer {
   height: 100px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #featureDivider {
+      display: none;
+  }
+
+  #scheduleContent {
+    display: none;
+  }
 }
