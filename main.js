@@ -21,7 +21,7 @@ if (browse != "IE") {
     });
   });
 
-  $(document).ready(function() {
+  jQuery(document).ready(function() {
 
           var documentEl = $(document),
               parallaxBg = $('#homeBackground');

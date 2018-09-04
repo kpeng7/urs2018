@@ -65,6 +65,8 @@ html, body, ul {
 }
 
 h1 {
+  -ms-grid-row-start: 1;
+  -ms-grid-row-end: 1;
   grid-row-start: 1;
   grid-row-end: 2;
   font-family: 'Belleza', sans-serif;
@@ -79,10 +81,15 @@ h2 {
 }
 .appearOnEntry{
   margin-top: 5%;
+  -ms-grid-row-start: 2;
   grid-row-start: 2;
+  -ms-grid-row-end: 3;
   grid-row-end: 3;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-template-columns: 15% 45% 5% 20% 15%;
   grid-template-columns: 15% 45% 5% 20% 15%;
+  -ms-grid-template-rows: auto;
   grid-template-rows: auto;
   opacity: 1;
   -webkit-animation-name: show;
@@ -103,11 +110,15 @@ h2 {
 }
 
 .title {
+  -ms-grid-column-start: 5;
   grid-column-start: 5;
+  -ms-grid-column-end: 18;
   grid-column-end: 18;
   font-size: calc(60px + 1vw);
   font-weight: 400;
+  -ms-grid-row-start: 3;
   grid-row-start: 3;
+  -ms-grid-row-end: 4;
   grid-row-end: 4;
 }
 
@@ -115,11 +126,17 @@ h2 {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  -ms-grid-column-start: 5;
+  -ms-grid-column-end: 18;
   grid-column-start: 5;
   grid-column-end: 18;
 }
 
 .titleDivider {
+  -ms-grid-row-start: 5;
+  -ms-grid-row-end: 5;
+  -ms-grid-column-start: 4;
+  -ms-grid-column-end: 19;
   grid-row-start: 5;
   grid-row-end: 5;
   grid-column-start: 4;
@@ -177,7 +194,10 @@ h2 {
 .page {
   position: relative;
   display: grid;
+  display: -ms-grid;
+  -ms-grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px auto 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
   grid-template-columns: repeat(10, 40px) auto repeat(10, 40px);
+  -ms-grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
   grid-template-rows: repeat(20, 40px);
   top: 0;
   margin: 0;
@@ -199,6 +219,10 @@ h2 {
 }
 
 #featureDividerVert {
+    -ms-grid-row-start: 1;
+    -ms-grid-row-end: 4;
+    -ms-grid-column-start: 3;
+    -ms-grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 3;
@@ -252,11 +276,16 @@ h2 {
   top: 15%;
   position: absolute;
   display: grid;
+  display: -ms-grid;
   -webkit-animation-name: move;
   -webkit-animation-duration: 3s;
 }
 
 #info {
+    -ms-grid-column-start: 2;
+    -ms-grid-column-end: 3;
+    -ms-grid-row-start: 1;
+    -ms-grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -269,6 +298,10 @@ h2 {
 }
 
 #applyButton {
+    -ms-grid-column-start: 4;
+    -ms-grid-column-end: 5;
+    -ms-grid-row-start: 2;
+    -ms-grid-row-end: 3;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -301,6 +334,10 @@ h2 {
 }
 
 #vertFeatureDividerSymposium {
+  -ms-grid-row-start: 6;
+  -ms-grid-row-end: 8;
+  -ms-grid-column-start: 13;
+  -ms-grid-column-end: 13;
   grid-row-start: 6;
   grid-row-end: 8;
   grid-column-start: 13;
@@ -315,6 +352,7 @@ h2 {
 
 #theSymposiumSponsor {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: 200px 20px 250px auto;
   grid-row-start: 6;
   grid-row-end: 8;
