@@ -701,7 +701,7 @@ h2 {
   -ms-width: 100%;
 }
 
-#ie {
+.ie {
   display: none;
 }
 
@@ -790,5 +790,16 @@ h2 {
 
   #scheduleContent {
     display: none;
+  }
+
+  #ieScheduleContent {
+    font-size: 30px;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 13;
+    -ms-grid-row: 9;
+  }
+
+  .ie {
+
   }
 }
