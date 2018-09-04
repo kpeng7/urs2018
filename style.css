@@ -87,7 +87,7 @@ h2 {
   grid-row-end: 3;
   display: -ms-grid;
   display: grid;
-  s: 15% 45% 5% 20% 15%;
+  -ms-grid-columns: 15% 45% 5% 20% 15%;
   grid-template-columns: 15% 45% 5% 20% 15%;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
@@ -678,6 +678,8 @@ h2 {
   width: auto;
   float: right;
   display: inline-block;
+  *zoom: 1;
+  *display: inline;
   margin-bottom: 20px;
 }
 
