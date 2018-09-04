@@ -207,6 +207,7 @@ h2 {
 }
 
 #featureDivider {
+    -ms-display: none;
     position: absolute;
     width: 80%;
     margin-left: 10%;
@@ -688,11 +689,25 @@ h2 {
   margin-bottom: 30px;
 }
 
-#scheduleContent {
-  font-size: 30px;
+#ieScheduleContent {
+  display: none;
   -ms-grid-column: 6;
   -ms-grid-column-span: 13;
   -ms-grid-row: 9;
+  -ms-font-size: 30px;
+  -ms-width: 100%;
+}
+
+#ie {
+  display: none;
+}
+
+#scheduleContent {
+  -ms-display: none;
+  font-size: 30px;
+  /* -ms-grid-column: 6;
+  -ms-grid-column-span: 13;
+  -ms-grid-row: 9; */
   grid-column-start: 6;
   grid-column-end: 19;
   grid-row-start: 9;
