@@ -357,7 +357,7 @@ h2 {
 #theSymposiumSponsor {
   display: grid;
   display: -ms-grid;
-  -ms-grid-columns: 200px 20px 250px auto;
+  -ms-grid-columns: 140px 10px 140px 15px 50px 20px 100px auto;
   -ms-grid-row: 6;
   -ms-grid-row-span: 2;
   -ms-grid-column: 5;
@@ -824,10 +824,6 @@ h2 {
     -ms-grid-column: 6;
     -ms-grid-column-span: 13;
     -ms-grid-row: 9;
-  }
-
-  #hourLogo {
-    height: 100%;
   }
 
   .ie {
