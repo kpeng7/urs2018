@@ -23,8 +23,8 @@
   </div>
   <div id="navigation">
     <ul>
-      <a href="#apply" class="smooth">Apply Now!</a>
       <a href="#schedule" class="smooth">Schedule</a>
+      <a href="#tips" class="smooth">Tips</a>
       <a href="#keynote" class="smooth">Keynote Speaker</a>
       <a href="#about" class="smooth">About</a>
       <a href="#theSymposium" class="smooth">The Symposium</a>
@@ -41,11 +41,6 @@
           <p class="date">Date: </p>
           <p class="time">Time: </p>
           <p class="location">Location: </p>
-        </div>
-        <div id="featureDividerVert" class="appearOnEntry">
-        </div>
-        <div id="applyButton">
-          <a href="#apply" class="smooth">Apply now!</a>
         </div>
       </div>
     </div>
@@ -150,9 +145,7 @@
     <div id="room3" class="studentRooms">
     </div>
   </div>
-  <div id="tips" class="page" style="display:none;">
-    <button type="button" onclick="modifyRows()">
-    </button>
+  <div id="tips" class="page">
       <div id="tipPageTitle" class="title">
         General Presentation Tips
       </div>
@@ -160,60 +153,100 @@
       </div>
       <div id="generalPresContent">
         <div id="generalPresColumn1">
-          <div id="tip1" class="tipTitle">
+          <div id="tip1" class="tipTitle" onclick="showTip(1)">
             Rights to Use Material
           </div>
           <div id="tip1Description" class="tip">
             Before using any text, image, or other material, make sure that you have the rights to use it. Complex laws and social rules govern how much of someone's work you can reproduce in a presentation. Ignorance is no defense. Check that you are not infringing on copyright or other laws or on the customs of academic discourse when using material.
           </div>
-          <div id="tip2" class="tipTitle">
+          <div id="tip2" class="tipTitle" onclick="showTip(2)">
             Visual Contrast
           </div>
-          <div class="tip">
+          <div id="tip2Description" class="tip">
             Contrasts in brightness and tone between illustrations and backgrounds improves legibility. The best color combinations include white letters on medium blue, or black on yellow. Never use black letters on a dark background. Many people are red/green color blind - avoid using red and green next to each other.
           </div>
-          <div id="tip3" class="tipTitle">
+          <div id="tip3" class="tipTitle" onclick="showTip(3)">
             Experimental
           </div>
-          <div class="tip">
+          <div id="tip3Description" class="tip">
             There is no time in a 10-minute paper to teach standard technology. Unless the paper directly examines this technology, only mention what is necessary to develop the theme.
           </div>
-          <div id="tip4" class="tipTitle">
+          <div id="tip4" class="tipTitle" onclick="showTip(4)">
             Graphic Format
           </div>
-          <div class="tip">
+          <div id="tip4Description" class="tip">
             In graphs, qualitative relationships are emphasized at the expense of precise numerical values, while in tables, the reverse is true. If a qualitative statement, such as "Flow rate increased markedly immediately after stimulation," is the main point of the image, the purpose is better served with a graphic format. A good place for detailed, tabular data is in an image or two held in reserve in case of questions.
           </div>
-          <div id="tip5" class="tipTitle">
+          <div id="tip5" class="tipTitle" onclick="showTip(5)">
             Free of Nonessential Information
           </div>
-          <div class="tip">
+          <div id="tip5Description" class="tip">
             If information does not directly support the main point of the image, reserve this content for questions.
           </div>
-          <div id="tip6" class="tipTitle">
+          <div id="tip6" class="tipTitle" onclick="showTip(6)">
             Simple Format
           </div>
-          <div class="tip">
+          <div id="tip6Description" class="tip">
             With a simple, uncluttered format, the image is easy to design and directs audience attention to the main point.
           </div>
-          <div id="tip7" class="tipTitle">
+          <div id="tip7" class="tipTitle" onclick="showTip(7)">
             Clear Purpose
           </div>
-          <div class="tip">
+          <div id="tip7Description" class="tip">
             An effective image should have a main point, instead of a collection of available data. If the central theme of the image is not visible, improve the paper by revising or deleting the image.
           </div>
         </div>
         <div id="generalPresColumn2">
-          <div class="tipTitle">
+          <div id="tip8" class="tipTitle" onclick="showTip(8)">
+            Clear Train of Thought
           </div>
-          <div class="tip">
+          <div id="tip8Description" class="tip">
+            Ideas developed in the paper and supported by the images should flow smoothly in a logical sequence, without wandering to irrelevant asides or bogging down in detail. Everything presented verbally or visually should have a clear role supporting the paper's central thesis.
+          </div>
+          <div id="tip9" class="tipTitle" onclick="showTip(9)">
+            Integrated with Verbal Text
+          </div>
+          <div id="tip9Description" class="tip">
+            Images should support the verbal text and not merely display numbers. Conversely, verbal text should lay a proper foundation for each image. As each image is shown, give the audience a brief opportunity to become oriented before proceeding. If you will refer to the same image several times during your presentation, duplicate images.
+          </div>
+          <div id="tip10" class="tipTitle" onclick="showTip(10)">
+            Designed for the Current Oral Paper
+          </div>
+          <div id="tip10Description" class="tip">
+            Avoid complex data tables irrelevant to the current paper. The audience cares about evidence and conclusions directly related to the subject of the paper - not how much work was done.
+          </div>
+          <div id="tip11" class="tipTitle" onclick="showTip(11)">
+            Unified
+          </div>
+          <div id="tip11Description" class="tip">
+            An image is most effective when information is organized around a single central theme and tells a unified story.
+          </div>
+          <div id="tip12" class="tipTitle" onclick="showTip(12)">
+            Digestible
+          </div>
+          <div id="tip12Description" class="tip">
+            Excess information can confuse the audience. With an average of seven images in a 10-minute paper, roughly one minute is available per image. Restrict information to what is extemporaneously explainable to the uninitiated in the allowed length of time - reading prepared text quickly is a poor substitute for editing.
+          </div>
+          <div id="tip13" class="tipTitle" onclick="showTip(13)">
+            Readily Understood
+          </div>
+          <div id="tip13Description" class="tip">
+            The main point should catch the attention of the audience immediately. When trying to figure out the image, audience members are not fully paying attention to the speaker - try to minimize this.
+          </div>
+          <div id="tip14" class="tipTitle" onclick="showTip(14)">
+            Find more helpful tips at:
+          </div>
+          <div id="tip14Description" class="tip">
+            <a href="http://www.sfn.org/Annual-Meeting/Neuroscience-2015/Abstracts/Presenter-Resources/Oral-Presentations">http://www.sfn.org/Annual-Meeting/Neuroscience-2015/Abstracts/Presenter-Resources/Oral-Presentations</a>
           </div>
         </div>
+      </div>
+      <div id="tipsBackground">
       </div>
   </div>
   <div id="schedule" class="page">
     <div class="title">
-      Tentative Event Schedule
+      Event Schedule
     </div>
     <div class="titleDivider">
     </div>
@@ -268,23 +301,6 @@
       </div>
     </div>
     <div id="scheduleBackground">
-    </div>
-  </div>
-  <div id="apply" class="page">
-    <div id="applyTitle" class="title">
-      Apply Now!
-    </div>
-    <div class="titleDivider">
-    </div>
-    <div id="applyInformation" class="content">
-      <p style="font-size: 60px; text-align: center;">Undergraduate Research Symposium 2018</p>
-      <p id="applyDeadline">Application Deadline: September 27, 2018</p>
-      <p class="applyDescription">Monday, October 8, 2018
-        <br>5:00pm - 10:00pm
-        <br>Bloomberg Building</p>
-      <a href="https://goo.gl/forms/1jKlL6YTtW2ccnZK2"><button id="applyNow">Apply Now!</button></a>
-    </div>
-    <div id="applyBackground">
     </div>
   </div>
   <div id="footer" style="display:none;">

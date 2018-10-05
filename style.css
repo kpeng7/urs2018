@@ -625,12 +625,28 @@ h2 {
 }
 
 #tips {
-  grid-template-rows: repeat(var(--tipsRowNum), 40px);
-  height: max-content;
-  border-color: green;
-  border-style: inset;
-  border-width: 10px;
   padding-bottom: 40px;
+}
+#tipsBackground {
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(./tips_background.jpg);
+  background-size: cover;
+  z-index: -1;
+
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+      .parallax {
+          background-attachment: scroll;
+      }
+  }
 }
 
 #generalPresContent {
@@ -650,13 +666,23 @@ h2 {
 .tipTitle {
   font-size: 30px;
   cursor: pointer;
-  border-color: black;
+  border-color: rgba(0, 0, 0, 0.5);
   border-style: inset;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(244, 166, 65, 0.3);
 }
 
 .tip {
   font-size: 20px;
-  margin-left: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  display: none;
 }
 
 #generalPresColumn1 {
@@ -674,7 +700,6 @@ h2 {
   grid-column-start: 2;
   -ms-grid-column-span: 1;
   grid-column-end: 3;
-  border-style: dashed;
   margin-left: 40px;
 }
 
@@ -754,7 +779,7 @@ h2 {
   z-index: -1;
 }
 
-#applyInformation {
+/* #applyInformation {
   -ms-grid-row: 6;
   grid-row-start: 6;
 }
@@ -804,7 +829,7 @@ h2 {
   content: "";
   background-color: #FFF056;
   z-index: -1;
-}
+} */
 
 #footer {
   height: 100px;

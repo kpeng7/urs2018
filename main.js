@@ -1,3 +1,20 @@
+window.addEventListener("load", async () => {
+        setTipsHeight();
+});
+
+const setTipsHeight = () => {
+        let e = document.getElementById("tips");
+        let col1 = document.getElementById("generalPresColumn1");
+        let col2 = document.getElementById("generalPresColumn2");
+        let maxHeight = Math.max(col1.offsetHeight, col2.offsetHeight);
+        e.style.height = maxHeight + 300;
+};
+
+const showTip = (tipNum) => {
+        let e = document.getElementById("tip" + tipNum + "Description");
+        $(e).slideToggle("slow");
+        setTipsHeight();
+};
 
 $(document).ready(function(){
   $(".smooth").on('click', function(event) {
@@ -32,15 +49,6 @@ jQuery(document).ready(function() {
         });
     })();
 
-function modifyRows() {
-    var tipsTotalHeight1 = 240.0 + document.getElementById('generalPresColumn1').offsetHeight;
-    var tipsTotalHeight2 = 240.0 + document.getElementById('generalPresColumn2').offsetHeight;
-    var h = Math.max(tipsTotalHeight1, tipsTotalHeight2);
-    document.getElementById('generalPresColumn2').style.border = "thin dotted red";
-    document.documentElement.style.setProperty("--tipsRowNum", Math.ceil(h/40.0));
-    $('#tip1Description').toggle();
-}
-
 $(document).ready(function(){
     $(".tipTitle").onclick(function(){
       var num = this.id.slice(3);
@@ -51,11 +59,3 @@ $(document).ready(function(){
 $(".tipTitle").click(function() {
   $('#tip1Description').hide();
 });
-
-
-// var resizeSchedule = function() {
-//   var w = $('.content').width();
-//   $('#scheduleContent').width(w);
-// }
-// $(document).ready(resizeSchedule);
-// $(window).resize(resizeSchedule);
