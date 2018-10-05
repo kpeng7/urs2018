@@ -6,21 +6,26 @@ const setTipsHeight = () => {
         let e = document.getElementById("tips");
         let col1 = document.getElementById("generalPresColumn1");
         let col2 = document.getElementById("generalPresColumn2");
-        let maxHeight = Math.max(col1.offsetHeight, col2.offsetHeight);
+        let maxHeight = Math.max($(col1).height(), $(col2).height());
         e.style.height = (maxHeight + 300).toString() + "px";
 };
 
 const showTip = (tipNum) => {
         let e = document.getElementById("tip" + tipNum + "Description");
-        if (e.style.display == "none") {
-                e.style.display = "block";
-                setTipsHeight();
-        } else {
-                e.style.display = "none";
-                setTipsHeight();
-        }
-        // $(e).slideToggle("slow");
-        // setTipsHeight();
+        // if (e.style.display == "none") {
+        //         e.style.display = "block";
+        //         setTipsHeight();
+        // } else {
+        //         e.style.display = "none";
+        //         setTipsHeight();
+        // }
+        $(e).slideToggle({
+                duration: "slow",
+                progress: function(){
+                    setTipsHeight();
+            }
+    });
+
 };
 
 $(document).ready(function(){
