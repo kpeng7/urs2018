@@ -650,11 +650,11 @@ h2 {
 }
 
 #generalPresContent {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 16;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 17;
   -ms-grid-row: 7;
-  grid-column-start: 4;
-  grid-column-end: 20;
+  grid-column-start: 6;
+  grid-column-end: 17;
   grid-row-start: 7;
   height: max-content;
   display: -ms-grid;
