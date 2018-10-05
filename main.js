@@ -55,14 +55,3 @@ jQuery(document).ready(function() {
             parallaxBg.css('background-position', -currScrollPos + ' 0px');
         });
 });
-
-$(document).ready(function(){
-    $(".tipTitle").onclick(function(){
-      var num = this.id.slice(3);
-      $('#tip'+num+'Description').toggle();
-    });
-});
-
-$(".tipTitle").click(function() {
-  $('#tip1Description').hide();
-});
