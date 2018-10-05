@@ -7,7 +7,7 @@ const setTipsHeight = () => {
         let col1 = document.getElementById("generalPresColumn1");
         let col2 = document.getElementById("generalPresColumn2");
         let maxHeight = Math.max(col1.offsetHeight, col2.offsetHeight);
-        e.style.height = maxHeight + 300;
+        e.style.height = (maxHeight + 300).toString() + "px";
 };
 
 const showTip = (tipNum) => {
