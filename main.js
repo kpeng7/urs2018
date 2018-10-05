@@ -54,7 +54,7 @@ jQuery(document).ready(function() {
             var currScrollPos = documentEl.scrollLeft();
             parallaxBg.css('background-position', -currScrollPos + ' 0px');
         });
-    })();
+});
 
 $(document).ready(function(){
     $(".tipTitle").onclick(function(){
