@@ -12,13 +12,6 @@ const setTipsHeight = () => {
 
 const showTip = (tipNum) => {
         let e = document.getElementById("tip" + tipNum + "Description");
-        // if (e.style.display == "none") {
-        //         e.style.display = "block";
-        //         setTipsHeight();
-        // } else {
-        //         e.style.display = "none";
-        //         setTipsHeight();
-        // }
         $(e).slideToggle({
                 duration: "slow",
                 progress: function(){
