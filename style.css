@@ -764,7 +764,7 @@ h2 {
   -ms-grid-column-span: 13;
   -ms-grid-row: 9; */
   grid-column-start: 6;
-  grid-column-end: 19;
+  grid-column-end: 17;
   grid-row-start: 9;
   display: inline;
   width: 100%
