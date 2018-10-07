@@ -149,6 +149,57 @@ h2 {
   border-bottom-style: solid;
 }
 
+.room {
+        -ms-grid-column: 5;
+        grid-column-start: 5;
+        -ms-grid-column-span: 13;
+        grid-column-end: 18;
+        font-size: 30px;
+        font-weight: 400;
+        -ms-grid-row: 5;
+        grid-row-start: 5;
+        -ms-grid-row-span: 1;
+        grid-row-end: 6;
+        margin-left: 20px;
+}
+
+#studentSpeaker {
+        position: relative;
+        height: fit-content;
+        top: 0;
+        margin: 0;
+}
+
+#studentSpeakersBackground {
+        position: absolute;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url(./smoke_background.jpg);
+        background-size: cover;
+        z-index: -1;
+
+        background-attachment: fixed;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+
+        /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+        @media only screen and (max-device-width: 1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+}
+
+
+#studentSpeakersDivider {
+        -ms-grid-row: 5;
+        -ms-grid-row-span: 0;
+        grid-row-start: 5;
+        grid-row-end: 5;
+}
+
 #navigation {
   margin: 0;
   height: 50px;
@@ -591,12 +642,16 @@ h2 {
 }
 
 .student {
-  margin-left: 80px;
-  height: auto;
+  margin-left: 100px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 17;
+  grid-column-start: 3;
+  grid-column-end: 20;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 150px 10px auto;
   grid-template-columns: 150px 10px auto;
+  margin-right: 100px;
 }
 
 .timeslot {
@@ -613,7 +668,7 @@ h2 {
   -ms-grid-column: 3;
   grid-column-start: 3;
   -ms-grid-column-span: 1;
-  grid-column-end: 4;
+  grid-column-end: 10;
 }
 
 .studentResearchTitle {
@@ -622,6 +677,100 @@ h2 {
   grid-column-start: 3;
   -ms-grid-column-span: 1;
   grid-column-end: 4;
+  font-style: italic;
+}
+
+#studentSpeakers1 {
+  grid-template-rows: repeat(40, 40px);
+  -ms-grid-rows: repeat(40, 40px);
+  height: fit-content;
+}
+#studentSpeakers2 {
+  grid-template-rows: repeat(40, 40px);
+  -ms-grid-rows: repeat(40, 40px);
+  height: fit-content;
+}
+#studentSpeakers3 {
+  grid-template-rows: repeat(40, 40px);
+  -ms-grid-rows: repeat(40, 40px);
+  height: fit-content;
+}
+
+#s1 {
+  -ms-grid-row: 7;
+  grid-row-start: 7;
+  -ms-grid-row-span: 2;
+  grid-row-end: 9;
+}
+
+#s2 {
+  -ms-grid-row: 10;
+  grid-row-start: 10;
+  -ms-grid-row-span: 2;
+  grid-row-end: 12;
+}
+
+#s3 {
+  -ms-grid-row: 13;
+  grid-row-start: 13;
+  -ms-grid-row-span: 2;
+  grid-row-end: 15;
+}
+
+#s4 {
+  -ms-grid-row: 16;
+  grid-row-start: 16;
+  -ms-grid-row-span: 2;
+  grid-row-end: 18;
+}
+
+#s5 {
+  -ms-grid-row: 19;
+  grid-row-start: 19;
+  -ms-grid-row-span: 2;
+  grid-row-end: 21;
+}
+
+#s6 {
+  -ms-grid-row: 22;
+  grid-row-start: 22;
+  -ms-grid-row-span: 2;
+  grid-row-end: 24;
+}
+
+#s7 {
+  -ms-grid-row: 25;
+  grid-row-start: 25;
+  -ms-grid-row-span: 2;
+  grid-row-end: 27;
+}
+
+#s8 {
+  -ms-grid-row: 28;
+  grid-row-start: 28;
+  -ms-grid-row-span: 2;
+  grid-row-end: 30;
+}
+
+#s9 {
+  -ms-grid-row: 31;
+  grid-row-start: 31;
+  -ms-grid-row-span: 2;
+  grid-row-end: 33;
+}
+
+#s10 {
+  -ms-grid-row: 34;
+  grid-row-start: 34;
+  -ms-grid-row-span: 2;
+  grid-row-end: 36;
+}
+
+#s11 {
+  -ms-grid-row: 37;
+  grid-row-start: 37;
+  -ms-grid-row-span: 2;
+  grid-row-end: 39;
 }
 
 #tips {

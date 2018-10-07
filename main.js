@@ -1,6 +1,16 @@
 window.addEventListener("load", async () => {
         setTipsHeight();
+        setSpeakersHeight();
 });
+
+const setSpeakersHeight = () => {
+        let e = document.getElementById("studentSpeaker");
+        let p1 = document.getElementById("studentSpeakers1");
+        let p2 = document.getElementById("studentSpeakers2");
+        let p3 = document.getElementById("studentSpeakers3");
+        let height = $(p1).height() + $(p2).height() + $(p3).height();
+        e.style.height = height.toString() + "px";
+}
 
 const setTipsHeight = () => {
         let e = document.getElementById("tips");
@@ -47,6 +57,39 @@ jQuery(document).ready(function() {
 
         var documentEl = $(document),
             parallaxBg = $('#homeBackground');
+
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollLeft();
+            parallaxBg.css('background-position', -currScrollPos + ' 0px');
+        });
+});
+
+jQuery(document).ready(function() {
+
+        var documentEl = $(document),
+            parallaxBg = $('#aboutBackground');
+
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollLeft();
+            parallaxBg.css('background-position', -currScrollPos + ' 0px');
+        });
+});
+
+jQuery(document).ready(function() {
+
+        var documentEl = $(document),
+            parallaxBg = $('#studentSpeakersBackground');
+
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollLeft();
+            parallaxBg.css('background-position', -currScrollPos + ' 0px');
+        });
+});
+
+jQuery(document).ready(function() {
+
+        var documentEl = $(document),
+            parallaxBg = $('#tipsBackground');
 
         documentEl.on('scroll', function() {
             var currScrollPos = documentEl.scrollLeft();
